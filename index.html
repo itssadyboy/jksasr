@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Japanese Karate School</title>
+</head>
+
+<body>
+    <header>
+        <div class="jks">
+            <img src="images/logo.JPG" alt="Logo" class="logo">
+        <h1>Japanese Karate School</h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <!-- <li><a href="admission.html">Admission</a></li>
+                <li><a href="contact.html">Contact Us</a></li> -->
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Origin of Japanese Karate</h2>
+            <p>
+                Karate, meaning "empty hand, Karate originated in Okinawa, Japan, as a combination of indigenous
+                fighting styles and martial arts from other countries: </p>
+            <li><span><strong>Okinawan style</strong>:</span> <span> </span> A simple but effective fighting style that
+                was used in combat for centuries</li>
+            <li><span><strong>Chinese style</strong>:</span> <span> </span> An elaborate style that incorporated
+                philosophical teachings </span></li>
+            <li><span><strong>White Crane style</strong>: <span> </span> A style from Fujian, China that was especially
+                    influential </span></li>
+            The Origins of Karate in Japan | KCP Japanese Language School
+            The exact origins of karate are not known, but it's believed to have developed around 500 years ago. The
+            earliest practitioners were members of the royal court who protected the royal family and kept the peace.
+            Karate was introduced to mainland Japan in the 1920s by Okinawan karate master Gichin Funakoshi. Funakoshi
+            taught a synthesis of Okinawan styles called Shotokan. He dedicated his life to promoting the values of
+            karate and introduced it to Japan. In 1949, his followers established the Japan Karate Association (JKA) to
+            promote karate.
+            Karate is known as heiwa no bu, which means "martial art of peace" in Japanese. It's practiced by more than
+            130 million people around the world.
+
+            </p>
+
+            <h3>Key Historical Points</h3>
+            <ul id="history-points">
+                <li>
+                    <a href="#" class="toggle-detail">Okinawan Influence</a>
+                    <div class="detail">
+                        <p>Karate's roots are found in Tode, an Okinawan fighting system influenced by Chinese martial
+                            arts.</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="toggle-detail">Introduction to Japan</a>
+                    <div class="detail">
+                        <p>In 1922, Gichin Funakoshi introduced Karate to mainland Japan, demonstrating its techniques
+                            at a Tokyo university.</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="toggle-detail">Development of Styles</a>
+                    <div class="detail">
+                        <p>Various styles of Karate emerged, including Shotokan, Goju-Ryu, and others, each with its own
+                            techniques and philosophies.</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="toggle-detail">Post-War Popularity</a>
+                    <div class="detail">
+                        <p>After World War II, Karate gained widespread popularity both in Japan and around the world.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+
+            <h3>Karate Evolution Diagram</h3>
+            <img src="https://example.com/karate-diagram.jpg" alt="Karate Evolution Diagram">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Japanese Karate School</p>
+    </footer>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle-detail');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent the default anchor click behavior
+
+                // Toggle the corresponding detail section
+                const detail = this.nextElementSibling;
+                if (detail.style.display === "block") {
+                    detail.style.display = "none"; // Hide if already shown
+                } else {
+                    detail.style.display = "block"; // Show if hidden
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
